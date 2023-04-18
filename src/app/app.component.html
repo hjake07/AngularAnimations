@@ -17,4 +17,6 @@
     </mat-nav-list>
   </mat-toolbar-row>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<div [@routeAnimations]="prepareRoute(myOutlet)">
+  <router-outlet #myOutlet="outlet"></router-outlet>
+</div>
